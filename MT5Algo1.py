@@ -1,5 +1,5 @@
-import MetaTrader5 as mt
-from datetime import datetime
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,11 +17,11 @@ if menu=='Login':
 
         submit = st.form_submit_button('Submit')
         if submit:
-            mt.initialize()
+            mt5.initialize()
             login=25063331
             password= "btiwLDUQ~.39"
             server="FivePercentOnline-Real"
-            mt.login(login,password,server)
+            mt5.login(login,password,server)
 
 if menu=='Trade':
     with st.form('Trade Order',clear_on_submit=True):
